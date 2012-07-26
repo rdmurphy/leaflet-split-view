@@ -1,4 +1,4 @@
-leaflet-split-view
+Leaflet Map Split Viewer
 ==================
 
 A Leaflet-powered version of my Google Maps Split Viewer.
