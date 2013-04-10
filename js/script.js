@@ -49,7 +49,7 @@ mapRight.addLayer(stamenToner);
 var mapIsMoving = false;
 
 var mapMover = function(a, b) {
-  if (mapIsMoving) { return; };
+  if (mapIsMoving) { return; }
   mapIsMoving = true;
 
   var lng,
@@ -66,12 +66,12 @@ var mapMover = function(a, b) {
     console.log(lng);
   } else {
     lng = ((southWest.lng + northEast.lng) / 2) + (southWest.lng - northEast.lng);
-  };
+  }
 
   b.panTo(new L.LatLng(lat, lng));
   if (newZoom !== otherZoom) {
     b.setZoom(newZoom);
-  };
+  }
   mapIsMoving = false;
 };
 
